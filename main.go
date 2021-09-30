@@ -600,11 +600,23 @@ func accept_incoming_row() {
 	}
 }
 
+<<<<<<< HEAD
+func insert_incoming_row_before() {
+	insert_a_row()
+	accept_incoming_row()
+	insert_a_row()
+	accept_incoming_row()
+}
+
+=======
+>>>>>>> 17e1e408633795579ab8035a725418ba18cd49a9
 func accept_incoming_col() {
 	if srcidcol >= 0 && srcidcol < len(sheetcontentlist[curindex].srccontent[0]) && dstidcol >= 0 && dstidcol < len(sheetcontentlist[curindex].dstcontent[0]) {
 		msrc := len(sheetcontentlist[curindex
 		mdst := len(sheetcontentlist[curindex
 		msrc := len(sheetcontentlist[curindex].srccontent)
+		insert_a_row()
+		accept_incoming_row()
 		mdst := len(sheetcontentlist[curindex].dstcontent)
 		minm := min(msrc, mdst)
 		for i := 0; i < minm; i++ {
